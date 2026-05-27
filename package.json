@@ -1,0 +1,28 @@
+{
+  "name": "e-commerce-sales-forecasting",
+  "version": "1.0.0",
+  "description": "College demo prototype for an e-commerce sales forecasting system.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "vite --host 0.0.0.0",
+    "server": "node server/index.js",
+    "setup:python": "python3 -m venv .venv && .venv/bin/pip install -r requirements.txt",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "lucide-react": "^0.468.0",
+    "morgan": "^1.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^2.13.3",
+    "vite": "^6.0.3"
+  },
+  "devDependencies": {}
+}
